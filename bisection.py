@@ -18,7 +18,7 @@ def bisection(a,b): #here a,b is the uppr and lower limit
     a_f = f(a)
     b_f = f(b)
     c = (a+b)/2 #according to bisection method
-    tol = 0.000001
+    tol = 0.000001   #upto 5 decimal places
     while abs(f(c)) > tol : # here we are using the absolute value only to check
         if f(a)*f(c)>0 :                                #tollerance 
             a = c
